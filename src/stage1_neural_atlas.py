@@ -271,7 +271,7 @@ if __name__ == "__main__":
     args.vid_path = vid_path
     
     # get flow using current video
-    cmd = "python src/preprocess_optical_flow.py --vid-path %s --gpu %s " % (vid_path, select_gpu)
+    cmd = "python src/preprocess_optical_flow.py --vid-path %s --gpu %s " % (vid_path, 0)
     print(cmd)
     subprocess.call(cmd, shell=True)
     
